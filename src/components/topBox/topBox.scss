@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
+
+.topBox{
+
+    h1{
+        margin-bottom: 24px;
+    }
+    .list{
+
+        .listItem{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            border: 1px solid $soft-bg;
+            padding: 12px 12px;
+            border-radius: 4px;
+            
+            @include sm{
+                flex-direction: column;
+
+                
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                img{
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .user-text{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    flex-direction: column;
+                    
+                    
+                    .username{
+                        align-self: flex-start;
+                        font-weight: 300;
+                    }
+                    
+                    .email{
+                        font-weight: 100;
+                        color: $soft-color;
+
+                    }
+                }
+            }
+            .amount{
+                padding: 4px;
+                font-size: 1.2em;
+                color: #0dff0d;
+                font-weight: 800;
+
+                @include sm{
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}

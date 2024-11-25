@@ -1,0 +1,64 @@
+@import './variables.scss';
+@import './responsive.scss';
+
+@font-face {
+  font-family: 'Sora';
+  src: url(./Sora-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url(./BricolageGrotesque-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Herr Von Muellerhoff';
+  src: url(./HerrVonMuellerhoff-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url(./PermanentMarker-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  background-color: $main-bg;
+  color: $main-color;
+
+  .container{
+    display: flex;
+    
+
+  
+
+    .menuContainer{
+      width: 250px;
+      padding: 8px 24px;
+      border-right: 2px solid $soft-bg ;
+
+      @include lg{
+        width: max-content;
+        padding: 8px;
+      }
+    }
+    
+    .contentContainer{
+      padding: 84px 24px 8px 24px;
+      margin: auto;
+    
+    }
+  }
+  
+}

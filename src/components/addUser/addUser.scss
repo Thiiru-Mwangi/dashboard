@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.addUser {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.724);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal {
+    background-color: $dark-bg;
+    padding: 36px;
+    border-radius: 12px;
+    background-color: $main-bg;
+    position: relative;
+    // color: $dark-color;
+
+    .close {
+      position: absolute;
+      font-size: 1.5em;
+      right: 36px;
+      top: 36px;
+      color: $soft-bg;
+      cursor: pointer;
+    }
+    h1 {
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 32px;
+
+      label {
+        // margin-bottom: 4px;
+        font-size: 12px;
+      }
+
+      input {
+        border-radius: 4px;
+        padding: 8px 16px;
+        outline: none;
+        border: 1px solid $soft-bg;
+        background-color: transparent;
+        color: $main-color;
+
+        &::placeholder{
+            // padding-left: 8px;
+        }
+      }
+    }
+    button {
+       width: 100%; 
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+}

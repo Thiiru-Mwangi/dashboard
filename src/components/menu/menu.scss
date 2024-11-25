@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.menu {
+  padding-top: 84px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+
+    .title {
+      font-size: 12px;
+      font-weight: 200;
+      color: $soft-color;
+      text-transform: uppercase;
+
+      @include lg {
+        display: none;
+      }
+    }
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 4px;
+      transition: background-color 200ms ease;
+
+      @include md{
+        padding: 4px;
+      }
+
+      &:hover {
+        background-color: $soft-bg;
+      }
+      .listItemTitle {
+        @include lg {
+          display: none;
+          background-color: pink;
+        }
+      }
+    }
+  }
+}

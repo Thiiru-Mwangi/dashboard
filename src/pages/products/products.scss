@@ -1,0 +1,21 @@
+.products{
+    .info{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+
+        h1{
+            font-size: 24px;
+
+        }
+
+        button{
+            padding: 8px;
+            outline: none;
+            border-radius: 4px;
+
+
+        }
+    }
+}

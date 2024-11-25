@@ -1,0 +1,16 @@
+.users{
+    
+    .info{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+
+        h1{}
+        button{
+            padding: 8px;
+            border-radius: 4px;
+            outline: none;
+        }
+    }
+}
